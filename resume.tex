@@ -2,8 +2,10 @@
 % This file uses the resume document class (res.cls)
 
 \documentclass[margin]{res}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.5in}
 % the margin option causes section titles to appear to the left of body text
-\textwidth=5.2in % increase textwidth to get smaller right margin
+\textwidth=6.3in % increase textwidth to get smaller right margin
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
 
@@ -11,9 +13,8 @@
 
 \name{Benjamin L Hili\\[12pt]} % the \\[12pt] adds a blank line after name
 
-\address{{\bf Present Address} \\ 10 Joseph Street \\ Kingswood, NSW 2747  \\
-        0414329597 }
-\address{{\bf Email Address} \\ ben.hili1994@gmail.com }
+\address{{\bf Present Address} \\ 26/23-25 John Street\\ Lidcombe, NSW 2141}
+\address{{\bf Contact Details} \\ ben.hili1994@gmail.com \\ +61414329597}
 
 
 \begin{resume}
@@ -24,70 +25,75 @@
 
 \section{Experience}
 {\bf Software Engineer}, 
+	Spitfire Corporation, Sydney, NSW \hfill December 2018 - Present
+\begin{itemize} \itemsep 0pt  % reduce space between items
+\item Created automation tooling for the operations team and developed a simple front \\
+	end for users to interface with the tools, built using Flask.
+
+\item Worked in a team to develop a Portfolio Management System allowing \\
+	easy access, analysis and management of portfolios as well as generation of \\
+		information to guide investment decisions built using Flask, \\ 
+			Django and Scala microservices.
+	
+\end{itemize}
+
+{\bf Security Developer}, 
+	The Missing Link Security, Sydney, NSW\hfill July 2018 - December 2018
+\begin{itemize} \itemsep 0pt  % reduce space between items
+\item Contracted out to a cyber security team at a Big 4 Bank for duration of \\
+	employment.
+
+\item Developed and ported business logic to a centralised web portal for \\
+	automation of repetitive manual tasks saving days of effort for the team \\ 
+		each month, accessable via a web portal using Flask. 
+
+\item Developeed a big data pipeline to process and visualise data from a variety \\
+	of systems saving approximately a week of manual searching and processing \\
+		for reports each month, written using PySpark and Palantir Foundry.
+
+\item Set up Bitbucket, Confluence and Docker for the dev team and mentored interns \\
+	on Git usage and development workflows.
+\end{itemize}
+
+{\bf Software Developer}, 
 	Inspired Software Pty. Ltd., Penrith, NSW \hfill April 2017 - February 2018
 \begin{itemize} \itemsep 0pt  % reduce space between items
-\item Creating modules for the Odoo application in Python for clients
+\item Writing custom business logic for Odoo; an open source MRP system, to cater to \\
+	clients nuanced requirements.
 
-\item Use of Javascript and web languages to personalize client web interfaces \\
-            and ecommerce websites
+\item  Created front end interfaces using Javascript and Python for various clients \\
+	ecommerce businesses.
 
-\item Write Bash and PostgreSQL scripts to automate and streamline workflow
+\item Developed Bash and PostgreSQL scripts to automate repetitive development \\
+	workflows saving a few hours on every database migration.
 \end{itemize}
 
  {\bf Software Engineer}, 
 	Cubesys Pty. Ltd., Sydney, NSW \hfill Oct - April - 2017
  \begin{itemize} \itemsep 0pt  % reduce space between items
- \item Built applications using front end web technologies HTML5 and Sass, \\
-       as well as Asp.Net for back end logic
-
- \item Extended on Asp.Net Application to allow standard operations on Azure \\
-       Virtual Machines
-
- \item Created website mockups using Photoshop to be used by the sales team \\
-      when consulting clients
+ \item Using .Net, Sass and HTML created a guest WiFi application for a \\
+	 government client.
+ \item Automated standard operations across Azure virtual machines using .Net
  \end{itemize}
-
-{\bf Technical Support Engineer},
-	CNH Ind., St Mary's, NSW \hfill  May - Jun 2016
-\begin{itemize} \itemsep -2pt %reduce space between items
-\item Rolled out and reimaged new PC's to 140 staff members
-\item Professional communication with onsite staff
-\item Resolved backlog of level 1 \& 2 IT Support Tickets
-\end{itemize}
-
-\section{Projects}
-                  \begin{itemize} \itemsep -2pt
-		  \item Mock Pentesting Report: Reconaissaince, Metapsloit, XSS, SQL Injection
-                  \item Poker Simulation: C, bit-operations
-                  \item Fitness Calculator: Java, android studio
-                  \item Maze Solving Algorithm: C++, Recursive algorithm
-                  \item Inventory Reporting Website: PHP, MySQL
 
 \section{Leadership   Activities}
                {\bf Team Leader}, GovHack Australia, Sydney, NSW    \hfill        2016
                 \begin{itemize} \itemsep -2pt
-              \item Team lead of a small four man group responsible for keeping \\
-                    ahead of deadlines and assigning roles within the team.
-
-              \item Winner of two prize categories for a total of {\$}1500
-
-		 \end{itemize}
+              	\item Winner of two prize categories 
+		\end{itemize}
 
 		{\bf Club Member}, Developers Society, WSU \hfill   2015
                 \begin{itemize} \itemsep -2pt
-                 \item Participated in coding weekends and group discussion
-
-                 \item Mentored first and second year students
+                 \item Participated in coding weekends and group discussion as \\
+			 well as mentoring first and second year students
 		 \end{itemize}
-
-
 
 % Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Computer \\ Skills}
    \begin{tabular}{l p{3in}}
-    \underline{Languages:} & Python, Javascript, C, C++, C\#, SQL, Bash\\
-
-	   \underline{Software:} &  Linux, SQL, git, Kali Tools (msf, dir, nmap, hydra, etc) Photoshop/Gimp
+    \underline{Languages:} & Python, SQL, Javascript, C#, Bash\\
+	\underline{Frameworks:} &  PySpark, Flask, Peewee, Scrapy, Django \\
+	\underline{Software:} &  AWS, Git, Docker, Linux, Pentest Tools
  \end{tabular}
 
 \end{resume}
