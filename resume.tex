@@ -63,7 +63,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
+  \item\normalsize{
     {#1 \vspace{1pt}}
   }
 }
@@ -124,13 +124,23 @@
 %-----------EXPERIENCE-----------
 \section{Experience}
 \resumeSubHeadingListStart
+
 \resumeSubheading
-{Senior Software Engineer}{Feb 2022 -- Present}
+{Senior Software Engineer}{May 2023 -- Present}
+{IAG}{Sydney, Vic}
+\resumeItemListStart
+\resumeItem{Wrote abstractions to allow new features to be re-used across all of IAG's brands and partner brands}
+\resumeItem{Built a dashboard to allow returning customers to identify themselves and add other existing customers to an insurance policy}
+\resumeItem{Added new services in the NestJS backend to provide email updates and allow users to save their sessions in DynamoDB}
+\resumeItemListEnd
+
+\resumeSubheading
+{Senior Software Engineer}{Mar 2022 -- Apr 2023}
 {Qantas}{Melbourne, Vic}
 \resumeItemListStart
-\resumeItem{Migrating backend services to use newly implemented REST APIs from SOAP}
-\resumeItem{Built lambda functions to automate weekly/monthly tasks performed manually}
-\resumeItem{Extend APIs built in Clojure to support different ways of paying with qantas loyalty points}
+\resumeItem{Extended Clojure APIs to support payment using a combination of points and cash}
+\resumeItem{Rewrote old logic around mapping flight pairs and hotels when booking holiday packages, taking local timezones into consideration }
+\resumeItem{Assisted in creating a wiki to collate the API documentation for our microservices}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -138,20 +148,18 @@
 {Latitude Financial}{Melbourne, Vic}
 \resumeItemListStart
 \resumeItem{Worked with KYC (know your customer) team to develop Golang microservices to determine loan repayability for customers that are applying for Latitudes buy-now-pay-later (BNPL) product}
-\resumeItem{Building a KYC service based on existing services to extend our BNPL product to the NZ market}
+\resumeItem{Built abstractions to allow Latitude's existing backend services to be used in the NZ market with only minor changes required to support region-specific rules}
 \resumeItem{Extended logging and metrics to enable tracing of a customers end-to-end journey through our various services to enable easier debugging of production issues as well as better monitoring and alerting}
-\resumeItem{Mentoring junior developers via pair programming sessions and running a small workshop on TDD which we use throughout Latitude}
+\resumeItem{Mentoring junior developers via pair programming sessions and ran a dev guild, including monthly workshops for AWS, Golang and patterns like TDD}
 \resumeItemListEnd
 
 \resumeSubheading
 {Senior Software Engineer}{September 2020 -- August 2021}
 {Vodafone}{North Sydney, NSW}
 \resumeItemListStart
-\resumeItem{Worked within the identity and access management team to develop a new login and registration flow for new and existing customers using Auth0.}
-\resumeItem{Created microservices on AWS Lambda for custom business requirements for multifactor authentication and custom multi-step registration flows.}
-\resumeItem{Fleshed out the integration and unit testing pipelines using Jest, Cypress and puppeteer.}
-\resumeItem{Extended CI/CD pipeline to automatically test and deploy changes via AWS cloudformation.}
-\resumeItem{Built responsive and stylised user flows on the front end with React and Styled components.}
+\resumeItem{Worked in a small team to replace Vodafone's existing IAM system with Auth0 and create a new login flow in React.}
+\resumeItem{Wrote scripts and created new lambdas to maintain backward compatibility with the legacy IAM system, preventing the need for re-registration by existing users.}
+
 \resumeItemListEnd
 
 % -----------Multiple Positions Heading-----------
@@ -168,10 +176,10 @@
 {Software Engineer}{August. 2019 -- September 2020}
 {Linktree}{Collingwood, VIC}
 \resumeItemListStart
-\resumeItem{Created a security service using the node runtime in AWS Lambda to capture user data, flag actions that violated our ToS and process offending accounts via SQS. The accounts would then be disabled and informed them of the reason they were banned on their next login.}
+\resumeItem{Created an event-driven system using AWS Lambda and to capture user data, flag actions that violated our ToS and process offending accounts via SQS.}
 \resumeItem{Migrated a large portion of our PHP/Symfony codebase into NextJS allowing for faster development for our React team and providing much faster page loads at a lower server cost.}
-\resumeItem{Created Lambdas triggered via SNS events which would clean and persist event logs from our frontend. This provided us with a wealth of data regarding user actions on our platform and could be used by our data scientists to provide insights in new features and their relative value to our users.}
-\resumeItem{Migrated AWS EKS cluster to Kubernetes saving resources and giving us finer control. Migrated our primary application from Vagrant to Docker which reduced the complexity and time taken to get the latest build running locally.}
+\resumeItem{Created Lambdas triggered via SNS events which would clean and persist event logs from our frontend. This provided us with a wealth of data regarding user actions on our platform and was used by our data team to provide insights into new features and their value to our users.}
+\resumeItem{Migrated AWS EKS cluster to Kubernetes saving resources and giving us finer control. Migrated our primary application from Vagrant to Docker which reduced the complexity and time taken to build the application.}
 \resumeItem{Wrote automated tests for all of our untested Node services using Jest and added them to our CircleCi and Buildkite pipelines.}
 \resumeItem{Wrote GraphQL APIs for our microservices using type-graphql so that our frontend could more easily retrieve required user data.}
 \resumeItemListEnd
@@ -180,34 +188,30 @@
 {Software Engineer}{December 2018 -- July 2019}
 {Spitfire Corporation}{Sydney, NSW}
 \resumeItemListStart
-\resumeItem{Worked with a small team to develop a Portfolio Management System allowing easy access, analysis and management of client portfolios as well as automated insights to guide investment decisions. Created using Flask and hosted on Amazon EC2 instances.}
-\resumeItem{Created an application to automate internal workflows using Django and GraphQL removing the need for hours of repeated manual effort per week spent on data entry.}
-\resumeItem{Created Django backend accessible via GraphQL API and consumed using Vue and Apollo Client to provide a web client to allow internal staff to kick off serverless workflows and to view and modify their results.}
+\resumeItem{Developed a robo-trader POC with Python to generate potential sequences of trades to rebalance client's portfolios.}
+\resumeItem{Created a CMS using Django for traders to access and visualise the API-generated information.}
+\resumeItem{Deployed infrastructure to AWS using Terraform and established a CI/CD pipeline.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Security Developer}{July 2018 -- December 2018}
 {Westpac}{Sydney, NSW}
 \resumeItemListStart
-\resumeItem{Developed a web application to automate business logic for manual tasks which saved days of manual effort each month. Created using Python/Flask and hosted on our internal network.}
-\resumeItem{Developed a big data pipeline to process and visualize data from a variety of systems saving approximately a week of manual searching and processing for reports each month, written using Apache Spark within Palantir Foundry.}
-\resumeItem{Made small updates and maintenance changes to a large Springboot application that was used internally for recording the outcomes of cyber security penetration tests.}
+\resumeItem{Automated report generation from pen-testing data using Palantir Foundry to highlight high-severity issues for faster remediation.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Software Developer}{April 2017 -- February 2018}
 {Inspired Software}{Sydney, NSW}
 \resumeItemListStart
-\resumeItem{Designed and implemented front ends for e-commerce web applications for our clients using Django, Sass and Javascript.}
-\resumeItem{Bash scripting and automation, creating docker containers for our codebases, building devops pipeline.}
+\resumeItem{Developed software solutions for multiple small businesses, including warehouse inventory management, e-commerce and accounting using Odoo.}
 \resumeItemListEnd
 
 \resumeSubheading
 {Web Developer}{June 2016 -- April 2017}
 {Cubesys Pty. Ltd}{Sydney, NSW}
 \resumeItemListStart
-\resumeItem{Using .Net, JQuery and Ajax, created a guest WiFi web application for a government client in the healthcare sector.}
-\resumeItem{Created an admin application giving internal users standard operations across our Azure virtual machines using .Net.}
+\resumeItem{Developed software solutions for NSW Health, including the WiFi portal for Westmead Children's Hospital as the sole developer.}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
